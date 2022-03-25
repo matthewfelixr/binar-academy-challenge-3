@@ -1,0 +1,376 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/57e92f94cf.js" crossorigin="anonymous"></script>
+    <title>Cars</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ps-0">
+        <div class="container-fluid">
+            <a href="#" class="pe-5 me-5"><img src="./img/brand.png" alt=""></a>
+            <i class="d-flex flex-grow-1" id="btn"><img src="img/burger.png" alt=""></i>
+            <form class="d-flex mb-0">
+                <input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary rounded-0" type="submit">Search</button>
+            </form>
+            <div class="d-inline-flex user-info align-items-center ms-4 me-4 ">
+                <span class="user-pp">
+                    <a href="#" class="btn btn-primary rounded-circle d-block">P</a>
+                </span>
+                <span class="navbar-drop" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          John Doe
+                        </a>
+                            <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="nav-icons-wrapper d-flex">
+            <ul class="m-2 p-0">
+                <li class="text-center pt-3 pb-3">
+                    <img src="./img/brandsq.png" alt="">
+                </li>
+                <a href="./dashboard.html">
+                    <li class="text-center">
+                        <img src="./img/home.png" class="justify-content-center" alt="">
+                        <p>Home</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="text-center">
+                        <img src="./img/cars.png" alt="">
+                        <p>Cars</p>
+                    </li>
+                </a>
+
+            </ul>
+            <div class="another-one">
+                <ul>
+                    <li class="p-3">
+                        <p><b>CARS</b></p>
+                    </li>
+                    <li class="active-category p-2">
+                        <p>LIST CARS</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <section id="content-container">
+        <div class="row">
+            <div id="content" class="min-vh-100">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active font-weight-bold" aria-current="page">Car</li>
+                    <li class="breadcrumb-item active" aria-current="page">List Car</li>
+                </ol>
+                <div class=" d-flex justify-content-between">
+                    <h5 class="d-flex">List Car</h5>
+                    <a href="./addCars.html" type="button" class="d-flex btn btn-primary me-4">+ Add New</a>
+                </div>
+                <div class="btn-wrapper mb-2">
+                    <button type="button" class="btn btn-lg category-btn btn-sm clicked">All</button>
+                    <button type="button" class="btn btn-lg category-btn btn-sm">Small</button>
+                    <button type="button" class="btn btn-lg category-btn btn-sm">Medium</button>
+                    <button type="button" class="btn btn-lg category-btn btn-sm">Large</button>
+                </div>
+                <div class="d-flex">
+                    <div class="card-deck d-flex ms-1">
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Toyota
+                                </h6>
+                                <h6 class="card-title">Rp. 200.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 1 Januari 2022 - 3 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 1 Januari 2022 , 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Honda
+                                </h6>
+                                <h6 class="card-title">Rp. 300.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 2 Januari 2022 - 4 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 3 Januari 2022, 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Suzuki
+                                </h6>
+                                <h6 class="card-title">Rp. 400.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 4 Januari 2022 - 6 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 5 Januari 2022 , 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex">
+                    <div class="card-deck d-flex ms-1">
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Toyota
+                                </h6>
+                                <h6 class="card-title">Rp. 200.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 1 Januari 2022 - 3 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 1 Januari 2022 , 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Honda
+                                </h6>
+                                <h6 class="card-title">Rp. 300.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 2 Januari 2022 - 4 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 3 Januari 2022, 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Suzuki
+                                </h6>
+                                <h6 class="card-title">Rp. 400.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 4 Januari 2022 - 6 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 5 Januari 2022 , 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex">
+                    <div class="card-deck d-flex ms-1">
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Toyota
+                                </h6>
+                                <h6 class="card-title">Rp. 200.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 1 Januari 2022 - 3 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 1 Januari 2022 , 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Honda
+                                </h6>
+                                <h6 class="card-title">Rp. 300.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 2 Januari 2022 - 4 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 3 Januari 2022, 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card m-2">
+                            <img class="card-img-top" src="img/Car.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    Suzuki
+                                </h6>
+                                <h6 class="card-title">Rp. 400.000 / hari</h6>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-key"></i> 4 Januari 2022 - 6 Januari 2022
+                                </p>
+                                <p class="card-text">
+                                    <i class="fa-regular fa-clock"></i> Updated at 5 Januari 2022 , 09.00
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-success w-100">
+                                            <i class="fa-regular fa-trash-can"></i> Delete
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-success w-100">
+                                            <i class="fa-regular fa-pen-to-square"></i> Edit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let navbar = document.querySelector(".navbar");
+        let content = document.querySelector("#content-container");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+            navbar.classList.toggle("active");
+            content.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

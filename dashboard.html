@@ -1,0 +1,347 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/57e92f94cf.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ps-0">
+        <div class="container-fluid">
+            <a href="#" class="pe-5 me-5"><img src="./img/brand.png" alt=""></a>
+            <i class="d-flex flex-grow-1" id="btn"><img src="img/burger.png" alt=""></i>
+            <form class="d-flex mb-0">
+                <input class="form-control rounded-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary rounded-0" type="submit">Search</button>
+            </form>
+            <div class="d-inline-flex user-info align-items-center ms-4 me-4 ">
+                <span class="user-pp">
+                    <a href="#" class="btn btn-primary rounded-circle d-block">P</a>
+                </span>
+                <span class="navbar-drop" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          John Doe
+                        </a>
+                            <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="nav-icons-wrapper d-flex">
+            <ul class="m-2 p-0">
+                <li class="text-center pt-3 pb-3">
+                    <img src="./img/brandsq.png" alt="">
+                </li>
+                <a href="#">
+                    <li class="text-center">
+                        <img src="./img/home.png" class="justify-content-center" alt="">
+                        <p>Home</p>
+                    </li>
+                </a>
+                <a href="./cars.html">
+                    <li class="text-center">
+                        <img src="./img/cars.png" alt="">
+                        <p>Cars</p>
+                    </li>
+                </a>
+
+            </ul>
+            <div class="another-one">
+                <ul>
+                    <li class="p-3">
+                        <p><b>DASHBOARD</b></p>
+                    </li>
+                    <li class="active-category p-2">
+                        <p>Dashboard</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <section id="content-container">
+        <div id="content" class="min-vh-100">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active font-weight-bold" aria-current="page">Dashboard</li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+
+            <div class="d-flex wrapper-container-menu justify-content-between">
+                <h4 class="p-1 ps-4 pt-0">Dashboard</h4>
+            </div>
+            <p class="p-2 ps-4"><span> </span> List Order</p>
+            <div class="table-responsive">
+                <table class="table data-table">
+                    <thead>
+                        <tr>
+                            <th width="5%">No</th>
+                            <th>User Email</th>
+                            <th>Car</th>
+                            <th>Start Rent</th>
+                            <th>Finish Rent</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1
+                            </td>
+                            <td>aaaa@gmail.com</td>
+                            <td>Toyota</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari 2022</td>
+                            <td>Rp.200.000</td>
+                            <td>Process</td>
+                        </tr>
+                        <tr>
+                            <td>2
+                            </td>
+                            <td>aaaa@gmail.com</td>
+                            <td>Toyota</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari 2022</td>
+                            <td>Rp.200.000</td>
+                            <td>Process</td>
+                        </tr>
+                        <tr>
+                            <td>3
+                            </td>
+                            <td>aaaa@gmail.com</td>
+                            <td>Toyota</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari 2022</td>
+                            <td>Rp.200.000</td>
+                            <td>Process</td>
+                        </tr>
+                        <tr>
+                            <td>4
+                            </td>
+                            <td>aaaa@gmail.com</td>
+                            <td>Toyota</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari 2022</td>
+                            <td>Rp.200.000</td>
+                            <td>Process</td>
+                        </tr>
+                        <tr>
+                            <td>5
+                            </td>
+                            <td>aaaa@gmail.com</td>
+                            <td>Toyota</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari 2022</td>
+                            <td>Rp.200.000</td>
+                            <td>Process</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-auto">Limit </div>
+                <div class="col ml-4">Jump to page</div>
+            </div>
+            <div class="row ">
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                      10
+                    </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">1</button>
+                            <button class="dropdown-item" type="button">2</button>
+                            <button class="dropdown-item" type="button">3</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                          1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">2</button>
+                            <button class="dropdown-item" type="button">3</button>
+                            <button class="dropdown-item" type="button">4</button>
+                        </div>
+                        <button class="btn btn-primary">Go</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <h4 class="table-tittle mb-3">List Car</h4>
+                <table class="table data-table">
+                    <thead>
+                        <tr>
+                            <th width="5%">No</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Start Rent</th>
+                            <th>Finish Rent</th>
+                            <th>Created at</th>
+                            <th>Updated at</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Toyota</td>
+                            <td>Minibus</td>
+                            <td>200.000</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari</td>
+                            <td>2 Januari</td>
+                            <td>3 Januari</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Honda</td>
+                            <td>Sedan</td>
+                            <td>300.000</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari</td>
+                            <td>2 Januari</td>
+                            <td>3 Januari</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Suzuki</td>
+                            <td>Van</td>
+                            <td>400.000</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari</td>
+                            <td>2 Januari</td>
+                            <td>3 Januari</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Toyota</td>
+                            <td>Minibus</td>
+                            <td>200.000</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari</td>
+                            <td>2 Januari</td>
+                            <td>3 Januari</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Honda</td>
+                            <td>Sedan</td>
+                            <td>200.000</td>
+                            <td>2 Januari 2022</td>
+                            <td>4 Januari</td>
+                            <td>2 Januari</td>
+                            <td>3 Januari</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-auto">Limit </div>
+                <div class="col ml-4">Jump to page</div>
+            </div>
+            <div class="row ">
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                      10
+                    </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">1</button>
+                            <button class="dropdown-item" type="button">2</button>
+                            <button class="dropdown-item" type="button">3</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                          1
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">2</button>
+                            <button class="dropdown-item" type="button">3</button>
+                            <button class="dropdown-item" type="button">4</button>
+                        </div>
+                        <button class="btn btn-primary">Go</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let navbar = document.querySelector(".navbar");
+        let content = document.querySelector("#content-container");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+            navbar.classList.toggle("active");
+            content.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
